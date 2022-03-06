@@ -590,7 +590,5 @@
             </div>
         </div>
     </section>
-    <!-- Product Section End -->
-
 
 @endsection
