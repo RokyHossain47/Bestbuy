@@ -21,16 +21,20 @@
       </tr>
       </thead>
       <tbody>
+      @foreach($massage as $value)
+      <tr>
 
-      <tr class="">
+        
         <td>1</td>  
         <td>
-            <strong><span class="d-block">{{$massage->subject}}</span></strong>
-            <span class="d-block">{{$massage->massage}}</span>
+            <strong><span class="d-block">{{$value->subject}}</span></strong>
+            <span class="d-block">{{$value->massage}}</span>
         </td>
-        <td>{{$massage->email}}</td>
-        <td>{{$massage->created_at}}</td>                  
+        <td>{{$value->email}}</td>
+        <td>{{$value->created_at}}</td> 
+                         
       </tr>
+      @endforeach
 
       </tbody>
       <tfoot>

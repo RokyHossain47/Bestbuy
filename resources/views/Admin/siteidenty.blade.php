@@ -31,13 +31,13 @@
                     <div class="form-group row ml-sm-4">
                         <label class="col-sm-2 col-form-label">Phone</label>
                         <div class="col-sm-10">
-                            <input name="phone" value="{{@$siteidenty->phone}}" class="form-control" placeholder="+88012548632" type="number">
+                            <input name="phone" value="{{$siteidenty->phone}}" class="form-control" placeholder="+88012548632" type="number">
                         </div>
                     </div>
                     <div class="form-group row ml-sm-4">
                         <label class="col-sm-2 col-form-label">Support Time</label>
                         <div class="col-sm-10">
-                            <input name="time" value="{{@$siteidenty->time}}" class="form-control" placeholder="24/7 Support" type="text">
+                            <input name="time" value="{{$siteidenty->time}}" class="form-control" placeholder="24/7 Support" type="text">
                         </div>
                     </div>
                 </div>

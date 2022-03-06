@@ -31,9 +31,9 @@ class MassageController extends Controller
         );
        $update = DB::table('massage_tb')-> insert($data);
        if( $update){
-            return redirect('contact')->with('status', 'Insert Successfully');
+            return redirect('contact')->with('status', 'Send Massage Successfully');
        }else{
-            return redirect('contact')->with('error', 'Something Went Wrong');
+            return redirect('contact')->with('error', 'Massage Not send');
        }
     }
 }

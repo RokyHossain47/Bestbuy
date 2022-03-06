@@ -174,8 +174,8 @@
                 <i class="fa fa-bars"></i>
             </div>
         </div>
-        <div class="content-header">
-        <div class="container-fluid">
+        <!-- <div class="content-header">
+            <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-12">
                     @if (session('status'))
@@ -196,8 +196,7 @@
                     @endif
                 </div>             
             </div>
-        </div><!-- /.container-fluid -->
-    </div>
+        </div> -->
     </header>
 
     @yield('content')
