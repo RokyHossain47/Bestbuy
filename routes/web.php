@@ -20,4 +20,4 @@ Route::get('/','App\Http\Controllers\Website\PageController@home')->name('home')
 
 Route::get('/admin','App\Http\Controllers\Admin\Authcontroller@index')->name('adminlogin');
 Route::post('/admin','App\Http\Controllers\Admin\Authcontroller@postlogin')->name('adminlogin');
-Route::get('/dashboard','App\Http\Controllers\Admin\DashboardController@index')->name('dashboard');
+Route::get('/dashboard','App\Http\Controllers\Admin\DashboardController@index')->name('dashboard')->middleware('PreventLogin');
