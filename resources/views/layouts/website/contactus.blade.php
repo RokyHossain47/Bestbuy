@@ -156,40 +156,6 @@
             </form>
         </div>
     </div>
-    <!-- Contact Form End -->
-  <!-- <div class="row">
-    <div class="col-sm-3"></div>
-      <div class="col-md-6">
-        <div class="card card-outline mt-4">
-          <div class="card-header bg-success">
-            <h3 class="card-title">Compose New Message</h3>
-          </div>
-          <div class="card-body">
-            <div class="form-group">
-              <input class="form-control" name="email" placeholder="To:">
-            </div>
-            <div class="form-group">
-              <input class="form-control" name="subject" placeholder="Subject:">
-            </div>
-            <div class="form-group">
-            <label for="inputDescription">Product Short Description</label>
-                <textarea id="summernote" require name="massage" class="summerheight">
-                    Product Short Description
-                </textarea>
-            </div>
-          </div>
-          
-          <div class="card-footer">
-            <div class="float-right">
-              <button type="button" class="btn btn-danger">Cancel</button>
-              <button type="submit" class="btn btn-success"> Send</button>
-            </div>
-          </div> 
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-3"></div>
-  </div> -->
 </form>
 
 @endsection
