@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/logout','App\Http\Controllers\Admin\DashboardController@logout')->name('logout');
 Route::get('/manageproducts','App\Http\Controllers\Admin\ProductController@manageproducts')->name('manageproducts');
+Route::delete('/delete/{id}','App\Http\Controllers\Admin\ProductController@delete')->name('delete');
 
 route::get('/addproduct','App\Http\Controllers\Admin\ProductController@index')->name('addproduct');
 Route::post('/addproduct','App\Http\Controllers\Admin\ProductController@addproduct')->name('addproduct');

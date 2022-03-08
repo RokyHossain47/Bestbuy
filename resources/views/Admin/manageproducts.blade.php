@@ -39,7 +39,15 @@
         <td> &#36; {{ $value->b_price }}</td>
         <td>
           <a href="{{route('editproduct', ['id'=>$value->id])}}" class="btn btn-success"><i class="fas fa-edit"></i></a>
-          <a href="#" class="btn btn-danger"><i class="fas fa-trash"></i></a>
+          <form class="float-right m-0" method="post" action="{{route('delete', ['id'=>$value->id])}}">
+            @method('delete')
+            @csrf
+            <div class="form-row border-0">
+                <input type="hidden" name="btndelete" value="{{ $value->id }}">
+                <button> <i class="btn btn-danger fa fa-trash-alt"></i></button>
+            
+            </div>
+          </form>
         </td>                    
       </tr>
 
