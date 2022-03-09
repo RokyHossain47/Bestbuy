@@ -110,7 +110,9 @@ class ProductController extends Controller
             's_price'           => $request->input('s_price')
         );
 
-        $update = DB::table('product_tb')->where('id', $id)->update($data);
+        $update = DB::table('product_tb')
+                    ->where('id', $id)
+                    ->update($data);
         // print_r($update);
         // die();
 
@@ -121,13 +123,12 @@ class ProductController extends Controller
         }
     }
 
-
     public function delete(Request $request)
     {
-        $btndelete = $request->get('btndelete');
+        $id = $request->get('btndelete');
         $data['value'] = DB::table('product_tb')
-                        ->select('id')
+                        ->where('id', $id)
                         ->delete();
-        return redirect('manageproducts', $data);
+        return redirect('manageproducts');
     }
 }
