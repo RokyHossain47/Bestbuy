@@ -78,8 +78,16 @@
             </td>
             <td>
               <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#Modal"><i class=" fas fa-pen-alt"></i>
-            </button>    
-                <button class="btn btn-danger" type="submit"><i class="fas fa-trash-alt"></i></button></td>
+              </button>
+              <form class="float-right m-0" method="post" action="{{route('delete', ['id'=>$value->id])}}">
+                @method('delete')
+                @csrf
+                <div class="form-row border-0">
+                    <input type="hidden" name="btndelete" value="{{ $value->id }}">
+                    <button> <i class="btn btn-danger fa fa-trash-alt"></i></button>
+                </div>
+              </form>
+            </td>
         </tr>
       @endforeach
 

@@ -41,4 +41,12 @@ class CategoryController extends Controller
         }
     }
 
+    public function delete(Request $request)
+    {
+        $id = $request->get('btndelete');
+        $data['value'] = DB::table('category_tb')
+                        ->where('id', $id)
+                        ->delete();
+        return redirect('addcategory');
+    }
 }

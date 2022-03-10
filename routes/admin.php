@@ -17,6 +17,8 @@ Route::get('/neworder','App\Http\Controllers\Admin\OrderController@neworder')->n
 
 Route::get('/addcategory','App\Http\Controllers\Admin\CategoryController@addcategory')->name('addcategory');
 Route::post('/addcategory','App\Http\Controllers\Admin\CategoryController@postcategory')->name('addcategory');
+Route::delete('/delete/{id}','App\Http\Controllers\Admin\CategoryController@delete')->name('delete');
+
 
 Route::get('/managecategory','App\Http\Controllers\Admin\CategoryController@managecategory')->name('managecategory');
 
